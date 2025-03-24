@@ -1,0 +1,31 @@
+{
+  "name": "real-time-customer-support-tracking-system",
+  "version": "1.0.0",
+  "description": "Real time customer support tracking system",
+  "main": "server.js",
+  "scripts": { 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nithinkumar18/Real-Time-Customer-Support-Tracking-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nithinkumar18/Real-Time-Customer-Support-Tracking-System/issues"
+  },
+  "homepage": "https://github.com/Nithinkumar18/Real-Time-Customer-Support-Tracking-System#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
