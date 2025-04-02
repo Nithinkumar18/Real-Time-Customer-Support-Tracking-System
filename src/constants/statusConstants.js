@@ -1,4 +1,4 @@
-export const constants = {
+ const constants = {
     SUCCESS: 200,
     INTERNAL_SERVER_ERROR: 500,
     CREATED: 201,
@@ -7,4 +7,6 @@ export const constants = {
     UNAUTHORIZED: 401,
     BAD_REQUEST: 400
 }
+module.exports = constants
+
 
