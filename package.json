@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Real time customer support tracking system",
   "main": "server.js",
-  "scripts": { 
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/Nithinkumar18/Real-Time-Customer-Support-Tracking-System#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.15.0",
     "mongoose": "^8.12.2",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.10.0",
     "winston": "^3.17.0"
   },
   "devDependencies": {

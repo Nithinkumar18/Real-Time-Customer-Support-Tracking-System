@@ -3,6 +3,13 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const logger = require('./src/loggers/logger');
 const app = express();
+const userRoutes = require('./src/routes/userRoutes');
+const ticketRoutes = require('./src/routes/ticketRoutes');
+
+
+app.use(express.json());
+app.use('/user/v1',userRoutes);
+app.use('/ticket/v1',ticketRoutes);
 
 mongoose.connect(process.env.MONGO_URL,{
     useNewUrlParser: true,
@@ -14,3 +21,4 @@ mongoose.connect(process.env.MONGO_URL,{
 }).catch((err) => {
     logger.error('🤷🏻‍♂️',err);
 })
+
