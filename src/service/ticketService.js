@@ -2,7 +2,6 @@ const ticket = require('../model/ticket');
 const logger = require('../loggers/logger');
 const responseInfo = require('../constants/responseMessages');
 const userService = require('../service/userService');
-// const mysession = require('../config/cacheService');
 const myCache = require('../config/cacheService');
 const responseService = require('../service/responseService');
 const response = require('../model/response');
