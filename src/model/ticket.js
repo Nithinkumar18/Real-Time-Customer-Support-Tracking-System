@@ -5,15 +5,19 @@ const user = require('../model/user');
 
 const ticketSchema = new Schema({
 
-   cutomer_Id:{
+   customer_Id:{
     type: mongoose.Schema.ObjectId,
     required: true,
     ref:user
    },
 
+   query:{
+      type: String,
+      required: true
+   },
+   
    assignedAgent:{
     type: mongoose.Schema.ObjectId,
-    required: true,
     ref: user
    },
 
@@ -32,4 +36,11 @@ const ticketSchema = new Schema({
     required: true
    },
 
+   dueDate:{
+      type: Date,
+      required: true
+   }
+
 }, {timestamps: true});
+
+module.exports = mongoose.model("ticket",ticketSchema);

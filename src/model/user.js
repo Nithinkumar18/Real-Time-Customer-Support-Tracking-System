@@ -23,7 +23,7 @@ const userSchema = new Schema({
 
     role: {
         type: String,
-        enum: ["customer", "staff", "manager"],
+        enum: ["customer", "Support Agent", "manager"],
     }
 
 },{timestamps: true})
