@@ -1,4 +1,4 @@
-# Ticket Management System
+# Real-Time-Customer-Support-System
 
 ## Overview
 The **Real-Time-Customer-Support-System** is designed to streamline customer support by efficiently handling support tickets, tracking their status, and ensuring timely resolutions. 
