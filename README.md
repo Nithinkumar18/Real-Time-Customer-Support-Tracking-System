@@ -30,7 +30,7 @@ Users must **register** and authenticate using **JWT**. Role-based access contro
 - **Role-Based Access Control (RBAC)**:  
   - **Customers** have limited access (only their tickets).  
   - **Support Agents** can manage tickets but have restricted administrative privileges.  
-  - **Managers** have full control, including user management and ticket escalation.  
+  - **Managers** have full control, including user management and ticket escalation and fetch weekly reports  
 - Unauthorized users **cannot access restricted operations**.
 
 ## Features
@@ -47,9 +47,10 @@ Users must **register** and authenticate using **JWT**. Role-based access contro
    git clone <repo-url>
 
 2. Install dependencies:
+    ```sh
     npm install
 
-3. Set up environment variables (.env file):
+4. Set up environment variables (.env file):
 
    JWT_SECRET=<your_secret_key>
    DATABASE_URL=<your_database_connection_string>
